@@ -1,0 +1,46 @@
+{
+  "name": "dns-prefetch-webpack-plugin",
+  "version": "0.0.1",
+  "description": "A webpack plugin for dns-prefetch",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint:js": "eslint --cache .",
+    "lint:prettier": "prettier --cache --list-different .",
+    "fix:js": "npm run lint:js -- --fix",
+    "fix:prettier": "npm run lint:prettier -- --write",
+    "fix": "npm run fix:js && npm run fix:prettier",
+    "commitlint": "commitlint --from=master",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "prepare": "husky",
+    "release": "standard-version"
+  },
+  "author": "Cheng007 <565460621@qq.com> (https://github.com/Cheng007)",
+  "dependencies": {
+    "dom-parser": "^1.1.5",
+    "webpack-sources": "^3.2.3"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.0.3",
+    "@commitlint/config-conventional": "^19.0.3",
+    "eslint": "^8.57.0",
+    "husky": "^9.0.11",
+    "jest": "^29.7.0",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5",
+    "release-please": "^16.9.0",
+    "standard-version": "^9.5.0",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "webpack",
+    "plugin",
+    "dns-prefetch",
+    "dns-prefetch-webpack-plugin"
+  ],
+  "license": "ISC"
+}

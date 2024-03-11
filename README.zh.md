@@ -1,0 +1,36 @@
+# dns-prefetch-webpack-plugin
+
+[English Doc](./README.md)
+
+一个 dns-prefetch 的 webpack 插件
+
+## 为什么要使用 dns-prefetch？
+
+`dns-prefetch` 可以减少第三方 DNS 解析延迟：
+
+当浏览器从（第三方）服务器请求资源时，必须先将该跨源域名解析为 IP 地址，然后浏览器才能发出请求。此过程称为 DNS 解析。虽然 DNS 缓存可以帮助减少此延迟，但 DNS 解析可能会给请求增加明显的延迟。
+
+## 如何使用?
+
+**webpack.config.js**
+
+```js
+const DnsPrefetchWebpackPlugin = require("dns-prefetch-webpack-plugin");
+
+module.exports = {
+  entry: "index.js",
+  output: {
+    path: __dirname + "/dist",
+    filename: "index_bundle.js",
+  },
+  plugins: [new DnsPrefetchWebpackPlugin()],
+};
+```
+
+你也可以手动指定域名
+
+```js
+{
+  plugins: [new DnsPrefetchWebpackPlugin(['example1.com', 'example2.com'])],
+}
+```
