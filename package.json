@@ -16,6 +16,10 @@
     "release": "standard-version"
   },
   "author": "Cheng007 <565460621@qq.com> (https://github.com/Cheng007)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Cheng007/dns-prefetch-webpack-plugin.git"
+  },
   "dependencies": {
     "dom-parser": "^1.1.5",
     "webpack-sources": "^3.2.3"
