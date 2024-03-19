@@ -1,5 +1,10 @@
 const { expect, describe, it } = require("@jest/globals");
-const { getAllDomain, getPrefetchHtmlString } = require("../lib/util");
+const {
+  getAllDomain,
+  getPrefetchHtmlString,
+  getAllScript,
+  getAllLink,
+} = require("../lib/util");
 
 describe("util", () => {
   const html = `<!doctype html>
@@ -16,6 +21,23 @@ describe("util", () => {
   hell world
 </body>
 </html>`;
+
+  it("get all script", () => {
+    const scripts = getAllScript(html);
+    const expeted = [
+      '<script defer src="main.bundle.js"></script>',
+      '<script src="https://zhongan.com/path/test.js"></script>',
+    ];
+
+    expect(scripts).toEqual(expeted);
+  });
+
+  it("get all link", () => {
+    const scripts = getAllLink(html);
+    const expeted = ['<link href="http://example.com/path.css" />'];
+
+    expect(scripts).toEqual(expeted);
+  });
 
   it("get all domain", () => {
     const domains = getAllDomain(html);

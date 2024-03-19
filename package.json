@@ -21,7 +21,6 @@
     "url": "git+https://github.com/Cheng007/dns-prefetch-webpack-plugin.git"
   },
   "dependencies": {
-    "dom-parser": "^1.1.5",
     "webpack-sources": "^3.2.3"
   },
   "devDependencies": {
