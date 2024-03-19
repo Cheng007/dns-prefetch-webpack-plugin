@@ -34,3 +34,7 @@ you can mannualy define the domains
   plugins: [new DnsPrefetchWebpackPlugin(['example1.com', 'example2.com'])],
 }
 ```
+
+## Changelog
+
+[see](./CHANGELOG.md)

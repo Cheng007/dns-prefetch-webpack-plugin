@@ -34,3 +34,7 @@ module.exports = {
   plugins: [new DnsPrefetchWebpackPlugin(['example1.com', 'example2.com'])],
 }
 ```
+
+## 版本日志
+
+[见这里](./CHANGELOG.md)
