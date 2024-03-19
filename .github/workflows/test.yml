@@ -1,4 +1,4 @@
-name: Run tests
+name: test
 
 on: [push, pull_request]
 
@@ -27,7 +27,7 @@ jobs:
         # if: steps.node_modules_cache_id.outputs.cache-hit != 'true'
         run: npm ci
 
-      - name: Run tests
+      - name: Test
         run: npm run test:coverage
 
       - name: Coverage
