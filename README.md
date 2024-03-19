@@ -1,5 +1,12 @@
 # dns-prefetch-webpack-plugin
 
+<div align="center">
+
+[![test](https://github.com/Cheng007/dns-prefetch-webpack-plugin/actions/workflows/test.yml/badge.svg)](https://github.com/Cheng007/dns-prefetch-webpack-plugin/actions/workflows/test.yml)
+[![codecov](https://codecov.io/gh/Cheng007/dns-prefetch-webpack-plugin/graph/badge.svg?token=P65X9X5ISR)](https://codecov.io/gh/Cheng007/dns-prefetch-webpack-plugin)
+
+</div>
+
 [中文文档](./README.zh.md)
 
 A webpack plugin for dns-prefetch
