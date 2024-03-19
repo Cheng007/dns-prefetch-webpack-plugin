@@ -4,6 +4,7 @@
 
 [![test](https://github.com/Cheng007/dns-prefetch-webpack-plugin/actions/workflows/test.yml/badge.svg)](https://github.com/Cheng007/dns-prefetch-webpack-plugin/actions/workflows/test.yml)
 [![codecov](https://codecov.io/gh/Cheng007/dns-prefetch-webpack-plugin/graph/badge.svg?token=P65X9X5ISR)](https://codecov.io/gh/Cheng007/dns-prefetch-webpack-plugin)
+![NPM Version](https://img.shields.io/npm/v/dns-prefetch-webpack-plugin)
 
 </div>
 
