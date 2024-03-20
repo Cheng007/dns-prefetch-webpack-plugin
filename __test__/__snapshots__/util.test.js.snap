@@ -3,41 +3,43 @@
 exports[`util dns-prefetch with custom domains 1`] = `
 "<!doctype html>
 <html>
-<head>
-  <meta charset="utf-8" />
-  <title>Webpack App</title>
-  <link href="http://example.com/path.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <script defer src="main.bundle.js"></script>
-  <script src="https://zhongan.com/path/test.js"></script>
-
+  <head>
+    <meta charset="utf-8" />
+    <title>Webpack App</title>
+    <link href="http://example.com/path.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script defer src="main.bundle.js"></script>
+    <script src="https://zhongan.com/path/test.js"></script>
+  
 <link rel="dns-prefetch" href="//a.com" />
 <link rel="dns-prefetch" href="//b.com" />
 
 </head>
-<body>
-  hell world
-</body>
-</html>"
+  <body>
+    hell world
+  </body>
+</html>
+"
 `;
 
 exports[`util dns-prefetch without custom domain 1`] = `
 "<!doctype html>
 <html>
-<head>
-  <meta charset="utf-8" />
-  <title>Webpack App</title>
-  <link href="http://example.com/path.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <script defer src="main.bundle.js"></script>
-  <script src="https://zhongan.com/path/test.js"></script>
-
+  <head>
+    <meta charset="utf-8" />
+    <title>Webpack App</title>
+    <link href="http://example.com/path.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script defer src="main.bundle.js"></script>
+    <script src="https://zhongan.com/path/test.js"></script>
+  
 <link rel="dns-prefetch" href="//zhongan.com" />
 <link rel="dns-prefetch" href="//example.com" />
 
 </head>
-<body>
-  hell world
-</body>
-</html>"
+  <body>
+    hell world
+  </body>
+</html>
+"
 `;
