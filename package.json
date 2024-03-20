@@ -20,6 +20,9 @@
     "type": "git",
     "url": "git+https://github.com/Cheng007/dns-prefetch-webpack-plugin.git"
   },
+  "bugs": {
+    "url": "https://github.com/Cheng007/dns-prefetch-webpack-plugin/issues"
+  },
   "dependencies": {
     "webpack-sources": "^3.2.3"
   },
