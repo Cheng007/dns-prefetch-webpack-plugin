@@ -12,8 +12,7 @@
     "commitlint": "commitlint --from=master",
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "prepare": "husky",
-    "release": "standard-version"
+    "prepare": "husky"
   },
   "author": "Cheng007 <565460621@qq.com> (https://github.com/Cheng007)",
   "repository": {
@@ -35,7 +34,6 @@
     "lint-staged": "^15.2.2",
     "prettier": "^3.2.5",
     "release-please": "^16.9.0",
-    "standard-version": "^9.5.0",
     "webpack": "^5.90.3",
     "webpack-cli": "^5.1.4"
   },
