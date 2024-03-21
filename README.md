@@ -44,6 +44,20 @@ you can mannualy define the domains
 }
 ```
 
+use with [`html-webpack-plugin`](https://www.npmjs.com/package/html-webpack-plugin)
+
+```js
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const DnsPrefetchWebapckPlugin = require("dns-prefetch-webpack-plugin");
+
+{
+  plugins: [
+    new HtmlWebpackPlugin(),
+    new DnsPrefetchWebapckPlugin(["baidu.com", "jindong.com"]),
+  ];
+}
+```
+
 ## Changelog
 
 see[here](./CHANGELOG.md)

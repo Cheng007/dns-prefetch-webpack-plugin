@@ -44,6 +44,20 @@ module.exports = {
 }
 ```
 
+配合 [`html-webpack-plugin`](https://www.npmjs.com/package/html-webpack-plugin)
+
+```js
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const DnsPrefetchWebapckPlugin = require("dns-prefetch-webpack-plugin");
+
+{
+  plugins: [
+    new HtmlWebpackPlugin(),
+    new DnsPrefetchWebapckPlugin(["baidu.com", "jindong.com"]),
+  ];
+}
+```
+
 ## 版本日志
 
 见[这里](./CHANGELOG.md)
