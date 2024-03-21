@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.0](https://github.com/Cheng007/dns-prefetch-webpack-plugin/compare/v0.0.5...v1.0.0) (2024-03-21)
+
+
+### Features
+
+* delete useless file ([a113880](https://github.com/Cheng007/dns-prefetch-webpack-plugin/commit/a113880d2c25e240e12bb83a45669e6f80868da0))
+
 ## [0.0.5](https://github.com/Cheng007/dns-prefetch-webpack-plugin/compare/v0.0.4...v0.0.5) (2024-03-21)
 
 
