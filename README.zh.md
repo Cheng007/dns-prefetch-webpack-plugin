@@ -50,12 +50,14 @@ module.exports = {
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const DnsPrefetchWebapckPlugin = require("dns-prefetch-webpack-plugin");
 
-{
-  plugins: [
-    new HtmlWebpackPlugin(),
-    new DnsPrefetchWebapckPlugin(["baidu.com", "jindong.com"]),
-  ];
-}
+module.exports = {
+  entry: "index.js",
+  output: {
+    path: __dirname + "/dist",
+    filename: "index_bundle.js",
+  },
+  plugins: [new HtmlWebpackPlugin(), new DnsPrefetchWebpackPlugin()],
+};
 ```
 
 ## 版本日志
