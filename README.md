@@ -19,6 +19,12 @@ A webpack plugin for dns-prefetch
 
 When a browser requests a resource from a (third party) server, that cross-origin's domain name must be resolved to an IP address before the browser can issue the request. This process is known as DNS resolution. While DNS caching can help to reduce this latency, DNS resolution can add significant latency to requests. For websites that open connections to many third parties, this latency can significantly reduce loading performance.
 
+## Installation
+
+```bash
+npm install dns-prefetch-webpack-plugin -D
+```
+
 ## How to use?
 
 **webpack.config.js**
