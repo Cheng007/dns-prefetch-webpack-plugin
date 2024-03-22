@@ -44,13 +44,22 @@ describe("util", () => {
   });
 
   describe("dns-prefetch", () => {
-    it("with custom domains", async () => {
+    it("with custom domains", () => {
       const customDomains = ["a.com", "b.com"];
       const dnsPrefetchHtml = getPrefetchHtmlString(html, customDomains);
       expect(dnsPrefetchHtml).toMatchSnapshot();
     });
 
     it("without custom domain", () => {
+      const dnsPrefetchHtml = getPrefetchHtmlString(html);
+      expect(dnsPrefetchHtml).toMatchSnapshot();
+    });
+
+    it("exist dns prefetch link", async () => {
+      const html = await fs.promises.readFile(
+        path.resolve(__dirname, "./template/exist-link.html"),
+        "utf8",
+      );
       const dnsPrefetchHtml = getPrefetchHtmlString(html);
       expect(dnsPrefetchHtml).toMatchSnapshot();
     });
