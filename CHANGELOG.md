@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/Cheng007/dns-prefetch-webpack-plugin/compare/v1.0.0...v1.0.1) (2024-03-22)
+
+
+### Bug Fixes
+
+* exist dns-prefetch link repeat ([0731975](https://github.com/Cheng007/dns-prefetch-webpack-plugin/commit/0731975926baa0789f869bee9b909fa1eee759e8))
+
 ## [1.0.0](https://github.com/Cheng007/dns-prefetch-webpack-plugin/compare/v0.0.5...v1.0.0) (2024-03-21)
 
 
