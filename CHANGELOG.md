@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/Cheng007/dns-prefetch-webpack-plugin/compare/v1.0.1...v1.0.2) (2024-03-22)
+
+
+### Documentation
+
+* add installation in readme ([375902b](https://github.com/Cheng007/dns-prefetch-webpack-plugin/commit/375902b357cad2ea584cd7ffdeb171f443d19cbd))
+
 ## [1.0.1](https://github.com/Cheng007/dns-prefetch-webpack-plugin/compare/v1.0.0...v1.0.1) (2024-03-22)
 
 
